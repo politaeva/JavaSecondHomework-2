@@ -1,19 +1,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        int x = 100; // всего на счете
-        int y = 1452; // пополнение
+        int balance = 100;
+        int refill = 1100;
 
-        int z; //бонус
-        if (y > 1000) {
-            z = y / 100;
+        int bonus;
+        if (refill > 1000) {
+            bonus = refill / 100;
         } else {
-            z = 0;
+            bonus = 0;
         }
-        int a;
-        a = x + y + z; // итоговый баланс
-        System.out.println("Колличество бонусных рублей " + z);
-        System.out.println("Итоговый счет " + a);
+        int totalBalance;
+        totalBalance = balance + refill + bonus;
+        System.out.println("Колличество бонусных рублей " + bonus);
+        System.out.println("Итоговый счет " + totalBalance);
 
 
     }
